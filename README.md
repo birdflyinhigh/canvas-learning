@@ -20,3 +20,35 @@ steps to use canvas:
 + locate the canvas id 
 + access the 2d context 
 + draw shapes
+
+
+```js
+        window.onload = function () {
+            // 1. find the cavnas element
+            var canvas = document.getElementById('loopCanvas');
+            // 2 .get the 2d context (pencil）
+            var ctx = canvas.getContext('2d');
+            // 3. render graphics( x, y , width, height)
+            ctx.fillStyle = 'orange';
+            ctx.fillRect(100, 200, 200, 150);
+            // (x, y , radius, startAngle, endAngle, atiCLockwise)
+            ctx.fillStyle = 'navy';
+            ctx.arc(100, 100, 50, 0, 2*Math.PI, false);
+            ctx.fill()
+
+```
+
+#### 1.2 Canvas API 
+
++ canvas api functions 
++ canvas api properties 
++ line and shape functions 
++ text functions 
++ transforms functions 
+
+#### 1.3 documentations 
+
+www.whatwg.org/specs/web-apps/current-work/multipage/
+
+https://www.w3schools.com/html/default.asp
+

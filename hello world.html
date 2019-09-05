@@ -11,11 +11,17 @@
 
     <script>
         window.onload = function () {
-            # step 2 
+            // 1. find the cavnas element
             var canvas = document.getElementById('loopCanvas');
+            // 2 .get the 2d context (pencil）
             var ctx = canvas.getContext('2d');
+            // 3. render graphics( x, y , width, height)
             ctx.fillStyle = 'orange';
             ctx.fillRect(100, 200, 200, 150);
+            // (x, y , radius, startAngle, endAngle, atiCLockwise)
+            ctx.fillStyle = 'navy';
+            ctx.arc(100, 100, 50, 0, 2*Math.PI, false);
+            ctx.fill()
 
         }
     </script>
